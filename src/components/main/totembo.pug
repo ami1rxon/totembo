@@ -1,0 +1,14 @@
+-var images = ['clock 1.png', 'clock 2.png', 'clock 2.png']
+section.section__totembo
+    .main__totembo
+        each img in images 
+            .main__totembo-item
+                img(src=require('@/images/' + img), alt="").main__totembo-img
+                .main__totembo-info 
+                    h2.main__totembo-title Fantastic Style
+                    p.main__totembo-price 1 128 000 UZS
+                .main__totembo-icons
+                    a.main__totembo-icon.icon-heart(href="#") 
+                    a.main__totembo-icon.icon-cart(href="#")
+                span.main__totembo-discount 50%
+            

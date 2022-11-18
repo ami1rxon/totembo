@@ -1,0 +1,32 @@
+$bg: #E5E5E5;
+$grey: #E1E1E1;
+$greyDark: #323232;
+$white: #FFFFFF;
+$black: #000000;
+
+$montserrat: ('Regular', 400),
+             ('Bold', 700);
+           
+
+@each $name,$weight in $montserrat{
+    @font-face {
+        font-family: 'Montserrat';
+        src: url(../fonts/Montserrat/Montserrat-#{$name}.ttf);
+        font-weight: $weight;
+    }
+}
+
+$WebFonts: ('brands-400', 400),
+           ('duotone-900', 900),
+           ('light-300', 300),
+           ('regular-400', 401),
+           ('solid-900', 901);
+
+@each $name,$weight in $WebFonts{
+     @font-face {
+        font-family: 'WebFonts';
+         src: url(../fonts/webfonts/fa-#{$name}.ttf);
+         font-weight: $weight;
+    }
+ }
+

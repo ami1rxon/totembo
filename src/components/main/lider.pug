@@ -1,0 +1,15 @@
+-var item = {img: 'clock 4.png', title:'Fantastic Style', price: '1 128 000 UZS', discount: '50%'}
+
+section.section_lider 
+    h2.title ЛИдеры продаж
+    .main__lider
+        -for(var i = 0; i < 12; i++)
+            .main__lider-item
+                img(src=require('@/images/' + item.img), alt="").main__lider-img
+                h3.main__lider-title= item.title
+                p.main__lider-price= item.price
+                span.main__lider-discount= item.discount
+                .main__lider-icons
+                    a.main__lider-icon.icon-heart(href="#") 
+                    a.main__lider-icon.icon-cart(href="#") 
+
